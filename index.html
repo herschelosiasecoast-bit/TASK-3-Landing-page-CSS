@@ -1,0 +1,437 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seashell Perfumes — Signature Fragrances</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logo.png" alt="Seashell Perfumes Logo">
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#collection">Collection</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#order">Order</a>
+            <a href="#subscribe">Subscribe</a>
+            <a href="#testimonials">Reviews</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home">
+            <div>
+                <h1>Seashell Perfumes</h1>
+
+                <h2>Elegance in Every Bottle</h2>
+
+                <p>
+                    Discover our handcrafted fragrances, created from the finest
+                    essences around the world. Celebrate every moment with scents
+                    that linger.
+                </p>
+
+                <figure>
+                    <img src="images/perfume 1.jpg" alt="Signature perfume bottle">
+                    <figcaption>
+                        Signature Collection — A refined balance of floral and amber notes.
+                    </figcaption>
+                </figure>
+
+                <p>
+                    <strong>Open now:</strong>
+                    Free samples are available with every first order.
+                    Limited-time seasonal scents are now in stock.
+                </p>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="collection">
+
+            <h2>Featured Collection</h2>
+
+            <article>
+                <h3>Aurora Noir</h3>
+
+                <p>
+                    A deep, mysterious fragrance with oud, bergamot and patchouli.
+                    Perfect for evening wear.
+                </p>
+
+                <figure>
+                    <img src="images/perfume 2.jpg" alt="Aurora Noir perfume bottle">
+                    <figcaption>
+                        Aurora Noir — 50 ml and 100 ml available
+                    </figcaption>
+                </figure>
+            </article>
+
+            <article>
+                <h3>Morning Dew</h3>
+
+                <p>
+                    Fresh citrus top notes with jasmine and a soft musk base.
+                    Light and invigorating for daytime.
+                </p>
+
+                <figure>
+                    <img src="images/perfume 3.jpg" alt="Morning Dew perfume bottle">
+                    <figcaption>
+                        Morning Dew — Eau de toilette
+                    </figcaption>
+                </figure>
+            </article>
+
+            <article>
+                <h3>Velvet Rose</h3>
+
+                <p>
+                    Classic rose with vanilla and saffron undertones.
+                    A timeless romantic scent.
+                </p>
+
+                <figure>
+                    <img src="images/perfume 4.jpg" alt="Velvet Rose perfume bottle">
+                    <figcaption>
+                        Velvet Rose — Limited edition
+                    </figcaption>
+                </figure>
+            </article>
+
+        </section>
+
+        <hr>
+
+        <section id="pricing">
+
+            <h2>Pricing & Options</h2>
+
+            <table>
+                <caption>Perfume Sizes and Prices</caption>
+
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>30 ml</th>
+                        <th>50 ml</th>
+                        <th>100 ml</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Aurora Noir</td>
+                        <td>₱2,610</td>
+                        <td>₱3,944</td>
+                        <td>₱6,960</td>
+                    </tr>
+
+                    <tr>
+                        <td>Morning Dew</td>
+                        <td>₱2,030</td>
+                        <td>₱3,190</td>
+                        <td>₱5,510</td>
+                    </tr>
+
+                    <tr>
+                        <td>Velvet Rose</td>
+                        <td>₱2,320</td>
+                        <td>₱3,480</td>
+                        <td>₱6,380</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>
+                Payment methods accepted: Credit Card, Debit Card and Bank Transfer.
+                Shipping worldwide.
+            </p>
+
+        </section>
+
+        <hr>
+
+        <section id="order">
+
+            <h2>Order Now</h2>
+
+            <form action="#" method="post" autocomplete="on">
+
+                <fieldset>
+                    <legend>Customer Details</legend>
+
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname"
+                        required placeholder="Keith Mejia">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"
+                        required placeholder="you@gmail.com">
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone"
+                        placeholder="+6395634217">
+
+                    <label for="address">Shipping Address:</label>
+                    <textarea id="address" name="address" rows="3"
+                        placeholder="Street, City, Country"></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Order Details</legend>
+
+                    <label for="product">Choose Product:</label>
+
+                    <select id="product" name="product">
+                        <option value="aurora_noir">Aurora Noir</option>
+                        <option value="morning_dew">Morning Dew</option>
+                        <option value="velvet_rose">Velvet Rose</option>
+                    </select>
+
+                    <label>Size:</label>
+
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="size" value="30" checked>
+                            30 ml
+                        </label>
+
+                        <label>
+                            <input type="radio" name="size" value="50">
+                            50 ml
+                        </label>
+
+                        <label>
+                            <input type="radio" name="size" value="100">
+                            100 ml
+                        </label>
+                    </div>
+
+                    <label for="quantity">Quantity:</label>
+
+                    <input type="number" id="quantity" name="quantity"
+                        min="1" max="10" value="1">
+
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="gift_wrap" value="yes">
+                        Add Gift Wrap
+                    </label>
+
+                    <label for="delivery">Delivery Method:</label>
+
+                    <select id="delivery" name="delivery">
+                        <option value="standard">
+                            Standard Shipping (5-10 days)
+                        </option>
+
+                        <option value="express">
+                            Express Shipping (2-3 days)
+                        </option>
+
+                        <option value="pickup">
+                            Local Pickup
+                        </option>
+                    </select>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Payment</legend>
+
+                    <p class="payment-note">
+                        For demonstration purposes only. Do not enter real card information.
+                    </p>
+
+                    <label for="cardname">Name on Card:</label>
+                    <input type="text" id="cardname" name="cardname">
+
+                    <label for="cardnumber">Card Number:</label>
+                    <input type="text" id="cardnumber" name="cardnumber"
+                        inputmode="numeric"
+                        placeholder="•••• •••• •••• ••••">
+
+                    <label for="exp">Expiry Date:</label>
+                    <input type="month" id="exp" name="exp">
+
+                    <label for="cvv">CVV:</label>
+                    <input type="password" id="cvv" name="cvv"
+                        maxlength="4" placeholder="123">
+                </fieldset>
+
+                <button type="submit">Place Order</button>
+
+            </form>
+
+        </section>
+
+        <hr>
+
+        <section id="subscribe">
+
+            <h2>Subscribe for Samples & News</h2>
+
+            <form action="#" method="post">
+
+                <label for="sub_email">Email Address:</label>
+
+                <input type="email" id="sub_email" name="sub_email"
+                    required placeholder="you@gmail.com">
+
+                <label for="pref">Preferred Scent Notes:</label>
+
+                <select id="pref" name="pref">
+                    <option value="floral">Floral</option>
+                    <option value="oriental">Oriental</option>
+                    <option value="fresh">Fresh / Citrus</option>
+                    <option value="woody">Woody</option>
+                </select>
+
+                <label for="sample">Request a Sample:</label>
+
+                <input list="samples" id="sample" name="sample"
+                    placeholder="Pick a sample">
+
+                <datalist id="samples">
+                    <option value="Aurora Noir - 2ml">
+                    <option value="Morning Dew - 2ml">
+                    <option value="Velvet Rose - 2ml">
+                </datalist>
+
+                <button type="submit">Subscribe</button>
+
+            </form>
+
+        </section>
+
+        <hr>
+
+        <section id="testimonials">
+
+            <h2>What Customers Say</h2>
+
+            <blockquote>
+                "Aurora Noir is my signature scent — long-lasting and sophisticated.
+                I receive compliments every time I wear it."
+
+                <footer>— Emily R., New York</footer>
+            </blockquote>
+
+            <blockquote>
+                "Soft, airy and perfect for summer. Morning Dew feels like a fresh start."
+
+                <footer>— Carlos M., Lisbon</footer>
+            </blockquote>
+
+        </section>
+
+        <hr>
+
+        <section id="contact">
+
+            <h2>Contact Us</h2>
+
+            <address>
+                <strong>Seashell Perfumes Ltd.</strong><br>
+                12 Scent Street<br>
+                Perfume City, PC 12345<br>
+                <a href="tel:+6395634217">+6395634217</a><br>
+                <a href="mailto:seashellperfumes@gmail.com">
+                    seashellperfumes@gmail.com
+                </a>
+            </address>
+
+            <form action="#" method="post">
+
+                <fieldset>
+
+                    <legend>Send Us a Message</legend>
+
+                    <label for="cname">Your Name:</label>
+                    <input type="text" id="cname" name="cname">
+
+                    <label for="cemail">Your Email:</label>
+                    <input type="email" id="cemail" name="cemail">
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"
+                        rows="4"
+                        placeholder="How can we help?"></textarea>
+
+                    <button type="submit">Send Message</button>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
+        <hr>
+
+        <section id="extras">
+
+            <h2>Extras & Info</h2>
+
+            <p>
+                Our fragrances are carefully created to bring elegance,
+                freshness and the relaxing feeling of the sea.
+            </p>
+
+            <details>
+                <summary>Shipping & Returns</summary>
+
+                <p>
+                    Standard shipping takes 5–10 business days.
+                    Returns are accepted within 30 days unopened,
+                    subject to our returns policy.
+                </p>
+            </details>
+
+            <p>
+                <meter value="0.7" min="0" max="1">70%</meter>
+                <progress value="45" max="100">45%</progress>
+            </p>
+
+            <ol>
+                <li>Choose your fragrance</li>
+                <li>Place your order</li>
+                <li>Enjoy the scent</li>
+            </ol>
+
+            <ul>
+                <li>Free sample with first order</li>
+                <li>Gift wrapping available</li>
+                <li>Secure payment</li>
+            </ul>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            &copy; 2026 Seashell Perfumes. All rights reserved.
+        </p>
+
+        <p>
+            Follow us:
+            <a href="#">Instagram</a> |
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a>
+        </p>
+
+    </footer>
+
+</body>
+</html>
+```
